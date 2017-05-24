@@ -2,7 +2,7 @@ clear;
 mdata=load('data.mat');
 
 hold on;
-title('Q5 Part1');
+title('Q5 Part1 - Data Points with * Symbol');
 xlabel('X axis'); % x-axis label
 ylabel('Y axis'); % y-axis label
 

@@ -2,7 +2,7 @@ clear;
 mdata=load('data.mat');
 
 hold on;
-title('Q5 Part2');
+title('Q5 Part2 - Join Data Points with Straight Lines');
 xlabel('X axis'); % x-axis label
 ylabel('Y axis'); % y-axis label
 
