@@ -1,7 +1,7 @@
 clear;
 mdata=load('data.mat');
-end_cond = 'variational'; % 1st Figure
-%end_cond = 'not-a-knot'; % 2nd Figure
+%end_cond = 'variational'; % 1st Figure
+end_cond = 'not-a-knot'; % 2nd Figure
 
 % plot heart
 [px1, py1] = splinet(mdata.x(1:55), mdata.y(1:55), end_cond);
@@ -17,5 +17,6 @@ plot(px1, py1, 'b');
 plot(px2, py2, 'b');
 plot(px3, py3, 'b');
 plot(px4, py4, 'b');
-title('Q5 Part3 - Spline Interpolation');
+%title('Q5 Part3 - Spline Interpolation - Natural');
+title('Q5 Part3 - Spline Interpolation - Not-a-knot');
 axis off;
