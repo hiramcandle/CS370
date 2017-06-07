@@ -11,7 +11,7 @@ dp = tp - pp;
 distance = norm([dp(1) dp(2)], 2);
 
 if nargin<3 | isempty(flag)
-  % calculate theta d
+  % calculate theta_d
   theta_d = dire(P(4), P(5), P(1), P(2), P(3));
   dP(1) = SP*cos(P(3));
   dP(2) = SP*sin(P(3));
@@ -23,6 +23,6 @@ if nargin<3 | isempty(flag)
   
 elseif strcmp(flag,'events')
   dP = distance-HD;
-  halt=1;
-  direction=0;
+  halt = 1;
+  direction = 0;
 end;
