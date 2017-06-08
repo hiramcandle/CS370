@@ -32,6 +32,7 @@ end;
 % plot the trajectory of the pursuer
 figure(2);
 plot(y(:, 1), y(:, 2));
+axis([-1 8 0 12]);
 title('The Trajectory of the Pursuer');
 xlabel('x(t)'); % x-axis label
 ylabel('y(t)'); % y-axis label
@@ -39,7 +40,17 @@ ylabel('y(t)'); % y-axis label
 % plot the trajectory of the target
 figure(3);
 plot(y(:, 4), y(:, 5));
+axis([-1 8 0 12]);
 title('The Trajectory of the Target');
+xlabel('x(t)'); % x-axis label
+ylabel('y(t)'); % y-axis label
+
+% plot the trajectory of both
+figure(4);
+hold on;
+plot(y(:, 1), y(:, 2));
+plot(y(:, 4), y(:, 5), '--');
+title('The Trajectory of the Pursuer and Target');
 xlabel('x(t)'); % x-axis label
 ylabel('y(t)'); % y-axis label
 
