@@ -1,5 +1,4 @@
-
-function theta_dir = dire( x_t, y_t, x_p, y_p, theta_p)
+function theta_dir = dire(x_t, y_t, x_p, y_p, theta_p)
 
 %input:
 

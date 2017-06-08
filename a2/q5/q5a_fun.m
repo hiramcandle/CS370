@@ -13,9 +13,11 @@ distance = norm([dp(1) dp(2)], 2);
 if nargin<3 | isempty(flag)
   % calculate theta_d
   theta_d = dire(P(4), P(5), P(1), P(2), P(3));
+  % calculate pursuer position change
   dP(1) = SP*cos(P(3));
   dP(2) = SP*sin(P(3));
   dP(3) = SP*((theta_d - P(3) / (abs(theta_d - P(3)) + D)));
+  % calculate target position change
   dP(4) = ST*cos(P(6));
   dP(5) = ST*sin(P(6));
   dP(6) = ST/RT*AST;
