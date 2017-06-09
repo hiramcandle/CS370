@@ -21,9 +21,9 @@ options = odeset('AbsTol', tol,'RelTol',tol,'MaxOrder',5,'Stats','on',...
 
 % solve odes
 if METHOD == 1
-  [t,y] = ode15s('q5a_fun',[t_0,t_f],y_0,options);
+  [t,y,te,ye,ie] = ode15s('q5a_fun',[t_0,t_f],y_0,options);
 else
-  [t,y] = ode45('q5a_fun',[t_0,t_f],y_0,options);
+  [t,y,te,ye,ie] = ode45('q5a_fun',[t_0,t_f],y_0,options);
 end;
 
 % plot the trajectory of the pursuer and target
@@ -56,4 +56,4 @@ ylabel('y(t)'); % y-axis label
 
 % show hitting time
 disp('Hitting time: ');
-disp(t(length(t)));
+disp(te);
