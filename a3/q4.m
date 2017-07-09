@@ -19,7 +19,7 @@ title('Power Spectrum of Input Signal', 'FontSize', 8);
 xlabel('Frequency (Index)');
 
 % Set the limit frequency for picking signal from frequency domain
-t_freq = 2000;
+t_freq = 2200;
 
 % Pick Bird Chirp Signal
 fre_bird = fre_y;
