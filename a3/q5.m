@@ -1,6 +1,6 @@
 % Pre-allocate
-drop_ratio = double(zeros(4));
-rel_error = double(zeros(4));
+drop_ratio = double(zeros(1, 4));
+rel_error = double(zeros(1, 4));
 
 % Read picture & Convert it to double
 X = imread('mountainous.jpg');
@@ -25,7 +25,7 @@ Y(:,:) = min(Y(:,:), 1.0);
 Y(:,:) = max(Y(:,:), 0.0);
 subplot(2, 2, 2);
 imshow(Y);
-title('Drop ratio = 0.5 & tol = 0.00629', 'FontSize', 10);
+title('Drop ratio = 0.5000 & tol = 0.00629', 'FontSize', 10);
 disp(drop);
 % NMSE
 drop_ratio(2) = drop;
@@ -37,7 +37,7 @@ Y(:,:) = min(Y(:,:), 1.0);
 Y(:,:) = max(Y(:,:), 0.0);
 subplot(2, 2, 3);
 imshow(Y);
-title('Drop ratio = 0.7 & tol = 0.02068', 'FontSize', 10);
+title('Drop ratio = 0.7000 & tol = 0.02068', 'FontSize', 10);
 disp(drop);
 % NMSE
 drop_ratio(3) = drop;
@@ -49,7 +49,7 @@ Y(:,:) = min(Y(:,:), 1.0);
 Y(:,:) = max(Y(:,:), 0.0);
 subplot(2, 2, 4);
 imshow(Y);
-title('Drop ratio = 0.95 & tol = 0.139', 'FontSize', 10);
+title('Drop ratio = 0.9500 & tol = 0.139', 'FontSize', 10);
 disp(drop);
 % NMSE
 drop_ratio(4) = drop;
